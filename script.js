@@ -193,3 +193,5 @@ document.querySelectorAll('.cat-opt').forEach(button => {
         catModal.classList.remove('active'); // Close the window after clicking
     });
 });
+
+document.querySelectorAll('.mobile-cat-trigger').forEach(btn => btn.addEventListener('click', () => catModal.classList.add('active')));
