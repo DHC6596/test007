@@ -524,7 +524,7 @@ img {
 }
 
 .mixed-benefits li strong { 
-    color: white; 
+    color: var(--primary); 
     font-size: 1.05rem; 
     display: block;
 }
@@ -645,4 +645,18 @@ button.view-link { background: none; border: none; font-family: inherit; cursor:
 /* Mobile fix for the grid */
 @media (max-width: 500px) {
     .cat-choice-grid { grid-template-columns: 1fr; }
+}
+
+
+/* Top Bar Contact Links */
+.top-bar-contact a {
+    color: white;
+    text-decoration: none;
+    margin-left: 0px;
+    font-size: 0.75rem;
+    transition: 0.3s ease;
+}
+
+.top-bar-contact a:hover {
+    color: #f4b400;
 }
