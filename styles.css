@@ -1,3 +1,8 @@
+html, body {
+  height: auto;
+  overflow: hidden;
+}
+
         :root {
             --primary: #d49132;
             --primary-dark: #b87a28;
@@ -659,4 +664,9 @@ button.view-link { background: none; border: none; font-family: inherit; cursor:
 
 .top-bar-contact a:hover {
     color: #f4b400;
+}
+
+
+.lenis {
+  height: auto;
 }
