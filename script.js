@@ -1,5 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+// 1. Create Lenis smooth scroll
+const lenis = new Lenis({
+  duration: 1.2,
+  smoothWheel: true,
+  smoothTouch: false
+});
+
+// 2. Connect Lenis to animation loop
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
+
     // ── Hamburger menu ──
     const hamburger = document.getElementById('hamburger');
     const mobileNav = document.getElementById('mobileNav');
